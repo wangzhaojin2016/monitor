@@ -148,7 +148,7 @@ def Monitor(value,flag='Ping Failed',alerm_level=2):
             set_start_time(ip,'')
             set_start_nums(ip,0)
     
-    if monitor_ip > 0:
+    if monitor_ip:
         monitor_nums = get_start_nums()
         for key,ip in enumerate(monitor_ip):
             ip = str(ip)
